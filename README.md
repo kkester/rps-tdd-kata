@@ -15,7 +15,7 @@ A Code Kata is a small group coding exercise where each participant writes small
 TDD stands for Test Driven Development and in a nutshell it is a practice where you implement a feature by first writing the test, getting the test to fail, then implement the simplest minimal code needed to make the test pass, refactor the code, and then repeat.
 
 ### Executing this TDD Code Kata
-In this Code Kata, the exercise will involve building a simple Rock, Paper, Scissors game.  The goal is to write a method that takes two parameters; hand one and hand two.  The method will then determine the result and return a value indicating that either Hand One Won, Hand Two Won, or the result was a Tie. The team should also decide which assertion framework they will use.  The first Kata should may be use org.junit assertions, but subsequent Katas code use others such as assertj.
+In this Code Kata, the exercise will involve building a simple Rock, Paper, Scissors game.  The goal is to write a method that takes two parameters; hand one and hand two.  The method will then determine the result and return a value indicating that either Hand One Won, Hand Two Won, or the result was a Tie. The team should also decide which assertion framework they will use.  The first Kata should probably use `org junit` assertions, but subsequent Katas code use others such as `assertj`.
 
 #### Step 1
 Write a failing test.  Discuss first with the team and decide which should be the first test case. For example, rock vs rock. 
@@ -44,7 +44,7 @@ void rockVsRock() {
 }
 ```
 
-The key to this step is write the code so that it has compile errors and then let the IDE generate the code. Once the IDE has generated the code, the implementation of our method should look like below.
+The key to this step is to write the code so that it has compile errors and then let the IDE generate the code. Once the IDE has generated the code, the implementation of our method should look like below.
 ```java
 public Result play(Hand hand1, Hand hand2) {
     return null;
