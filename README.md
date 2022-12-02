@@ -1,7 +1,7 @@
 ## TDD Code Kata Starter Project
 
 - This project was generated using [Spring Initializr](https://start.spring.io/)
-- This project comes with JUnit5 built and does not include JUnit4.
+- This project comes with JUnit5 built in and does not include JUnit4.
 - To build and run this project, you will need to have JDK 11 installed on your work station
 
 ### Getting Started
