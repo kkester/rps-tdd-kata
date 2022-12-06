@@ -15,10 +15,10 @@ A Code Kata is a small group coding exercise where each participant writes small
 TDD stands for Test Driven Development and in a nutshell it is a practice where you implement a feature by first writing the test, getting the test to fail, then implement the simplest minimal code needed to make the test pass, refactor the code, and then repeat.
 
 ### Executing this TDD Code Kata
-In this Code Kata, the exercise will involve building a simple Rock, Paper, Scissors game.  The goal is to write a method that takes two parameters; hand one and hand two.  The method will then determine the result and return a value indicating that either Hand One Won, Hand Two Won, or the result was a Tie. The team should also decide which assertion framework they will use.  The first Kata should probably use `org junit` assertions, but subsequent Katas code use others such as `assertj`.
+In this Code Kata, the exercise will involve building a simple Rock, Paper, Scissors game.  The goal is to write a method that takes two parameters; hand one and hand two.  The method will then determine the result and return a value indicating that either Hand One Won, Hand Two Won, or the result was a Tie. The team should also decide which assertion framework they will use.  The first Kata should probably use `org junit` assertions, but subsequent Katas could use others such as `assertj`.
 
 #### Step 1
-Write a failing test.  Discuss first with the team and decide which should be the first test case. For example, rock vs rock. 
+Write a failing test.  Refer to the [User Stories](STORIES.md) and review the first test case which is rock vs rock. 
 ```java
 @Test
 void rockVsRock() {
@@ -71,5 +71,5 @@ class RpsTest {
 }
 ```
 
-### Follow up steps
-The next step then would be to identify and implement all test scenarios.  Once implemented, the tests should be ran and the results validated that all tests fail except for one. After this, the simplest code is then implemented to get each test to pass one at a time.  Once all tests are green, then the code is reviewed and refactored as needed.  After refactoring, all tests are ran once again to validate that everything is still green.
+### Subsequent Steps
+The next step then would be to implement the remainder of User Stories.  Following the Gherkin, the tests should be implemented first and executed and the results validated that all the new tests fail and all the existing tests still pass.  After this, the simplest code is then implemented to get each test to pass one at a time.  Once all tests are green, then the code is reviewed and refactored as needed.  After refactoring, all tests are ran once again to validate that everything is still green.
