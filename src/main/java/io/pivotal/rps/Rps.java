@@ -8,12 +8,11 @@ public class Rps {
         if (p1Hand == p2Hand) {
             return DRAW;
         }
-        return p1Wins(p1Hand, p2Hand) ? P1_WINS : P2_WINS;
-    }
 
-    private boolean p1Wins(Hand p1Hand, Hand p2Hand) {
-        return (p1Hand == PAPER && p2Hand == ROCK) ||
-            (p1Hand == ROCK && p2Hand == SCISSORS) ||
-            (p1Hand == SCISSORS && p2Hand == PAPER);
+        return switch(p1Hand) {
+            case ROCK -> p2Hand == SCISSORS ? P1_WINS : P2_WINS;
+            case PAPER -> p2Hand == ROCK ? P1_WINS : P2_WINS;
+            case SCISSORS -> p2Hand == PAPER ? P1_WINS : P2_WINS;
+        };
     }
 }
