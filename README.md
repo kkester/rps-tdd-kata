@@ -2,11 +2,11 @@
 
 - This project was generated using [Spring Initializr](https://start.spring.io/)
 - This project comes with JUnit5 built in and does not include JUnit4.
-- To build and run this project, you will need to have JDK 11 installed on your work station
+- To build and run this project, you will need to have JDK 17 installed on your work station
 
 ### Getting Started
 1. Choose your IDE.  IntelliJ is recommended, but eclipse could be used if that is the team's preference.  Ideally all participants in the code kata can use the same IDE.
-2. This project conatains a `final` branch that can be referenced to see an example possible solution for each step.  The main branch contains an empty project and should be used to start the kata.
+2. This project contains a `final` branch that can be referenced to see an example possible solution for each step.  The main branch contains an empty project and should be used to start the kata.
 
 ### What is a Code Kata?
 A Code Kata is a small group coding exercise where each participant writes small snippets of code in one sitting, sometimes repeatedly, in order to build muscle memory and practise their craft.
