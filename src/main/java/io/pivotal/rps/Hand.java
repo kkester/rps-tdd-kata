@@ -16,6 +16,6 @@ public enum Hand {
     }
 
     private Result getResult(Hand hand) {
-        return Hand.valueOf(dominateHandName).equals(hand) ? Result.P1_WINS : Result.P2_WINS;
+        return dominateHandName.equals(hand.name()) ? Result.P1_WINS : Result.P2_WINS;
     }
 }
