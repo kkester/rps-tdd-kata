@@ -23,12 +23,9 @@ public class HandResult {
     }
 
     public Result resultAgainst(Hand other) {
-        Result result = Result.P2_WINS;
         if (hand.equals(other)) {
-            result = Result.DRAW;
-        } else if (winHand.equals(other)) {
-            result = Result.P1_WINS;
+            return Result.DRAW;
         }
-        return result;
+        return winHand.equals(other) ? Result.P1_WINS : Result.P2_WINS;
     }
 }
