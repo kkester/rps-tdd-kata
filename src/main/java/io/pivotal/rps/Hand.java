@@ -5,7 +5,7 @@ public enum Hand {
     ROCK("SCISSORS"),
     SCISSORS("PAPER");
 
-    private String dominateHandName;
+    private final String dominateHandName;
 
     Hand(String dominateHandName) {
         this.dominateHandName = dominateHandName;
